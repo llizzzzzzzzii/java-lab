@@ -19,9 +19,6 @@ public class counter {
     public void countfreq(FileInputStream input) throws IllegalArgumentException {
         try {
             int c;
-//            BufferedReader reader=new BufferedReader(new FileReader(inputfile));
-//            BufferedReader reader=new BufferedReader(new FileReader(input.toString()));
-//            Files.readAllBytes(Path.of(inputfile))
             while ((c =input.read())!=-1) {
                 char sym = (char) c;
                 if (dict.containsKey(sym)) {
