@@ -33,10 +33,10 @@ public class counter {
             }
 //            System.out.println(dict);
         } catch (FileNotFoundException ex) {
-            System.out.println("Не найден файл" + input);
+            System.out.println("Не найден файл");
             throw new RuntimeException(ex);
         } catch (IOException ex) {
-            System.out.println("Ошибка при чтении файла" + input);
+            System.out.println("Ошибка при чтении файла");
             throw new RuntimeException(ex);
         }
     }
@@ -52,7 +52,7 @@ public class counter {
                 output.write((entry.getKey() + ":" + entry.getValue()+"\n").getBytes(StandardCharsets.UTF_8));
             }
         } catch (IOException ex) {
-            System.out.println("Ошибка при чтении файла" + output);
+            System.out.println("Ошибка при чтении файла");
             throw new RuntimeException(ex);
         }
     }
