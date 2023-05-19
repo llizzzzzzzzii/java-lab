@@ -4,19 +4,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Введите максимальное число заявок, которые могут быть поданы людьми с одного этажа за один шаг");
+        System.out.println("Р’РІРµРґРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ Р·Р°СЏРІРѕРє, РєРѕС‚РѕСЂС‹Рµ РјРѕРіСѓС‚ Р±С‹С‚СЊ РїРѕРґР°РЅС‹ Р»СЋРґСЊРјРё СЃ РѕРґРЅРѕРіРѕ СЌС‚Р°Р¶Р° Р·Р° РѕРґРёРЅ С€Р°Рі");
 
         int number_of_requests = sc.nextInt();
 
-        System.out.println("Введите интервал");
+        System.out.println("Р’РІРµРґРёС‚Рµ РёРЅС‚РµСЂРІР°Р»");
 
         int interval = sc.nextInt();
 
-        System.out.println("Введите максимальную вместимость лифта");
+        System.out.println("Р’РІРµРґРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ РІРјРµСЃС‚РёРјРѕСЃС‚СЊ Р»РёС„С‚Р°");
 
         int payload = sc.nextInt();
 
-        System.out.println("Введите количество этажей");
+        System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌС‚Р°Р¶РµР№");
 
         int amount_floors = sc.nextInt();
 
