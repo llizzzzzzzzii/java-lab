@@ -64,6 +64,6 @@ public class Lift {
                 break;
         }
 
-        return  new String("Номер лифта: " + id + "; Этаж: " + currentFloor + "; Направление: " + direct + "; Число пассажиров по направлению движения лифта: " + passengersList.size());
+        return  new String("РќРѕРјРµСЂ Р»РёС„С‚Р°: " + id + "; Р­С‚Р°Р¶: " + currentFloor + "; РќР°РїСЂР°РІР»РµРЅРёРµ: " + direct + "; Р§РёСЃР»Рѕ РїР°СЃСЃР°Р¶РёСЂРѕРІ РїРѕ РЅР°РїСЂР°РІР»РµРЅРёСЋ РґРІРёР¶РµРЅРёСЏ Р»РёС„С‚Р°: " + passengersList.size());
     }
 }
