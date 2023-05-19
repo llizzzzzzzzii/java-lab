@@ -49,7 +49,7 @@ public class ElevatorManager implements Runnable {
             try {
                 count++;
                 int usedElevators = 0;
-                System.out.println("Шаг № " + count);
+                System.out.println("РЁР°Рі в„– " + count);
 
                 for (Lift elevator : elevatorsList) {
                     elevator.move();
@@ -74,18 +74,18 @@ public class ElevatorManager implements Runnable {
 
                             if (passengerStartFloor > currentFloor) {
                                 requestedUp.add(passenger);
-                                System.out.println("пассажир " + passenger + " ожидает вверху на " + passengerStartFloor + " этаже");
+                                System.out.println("РїР°СЃСЃР°Р¶РёСЂ " + passenger + " РѕР¶РёРґР°РµС‚ РІРІРµСЂС…Сѓ РЅР° " + passengerStartFloor + " СЌС‚Р°Р¶Рµ");
                             } else if (passengerStartFloor < currentFloor) {
                                 requestedDown.add(passenger);
-                                System.out.println("пассажир " + passenger + " ожидает внизу на " + passengerStartFloor + " этаже");
+                                System.out.println("РїР°СЃСЃР°Р¶РёСЂ " + passenger + " РѕР¶РёРґР°РµС‚ РІРЅРёР·Сѓ РЅР° " + passengerStartFloor + " СЌС‚Р°Р¶Рµ");
                             }
                             if (passengerStartFloor == currentFloor && passengerDirection == Destination.Up) {
                                 upDirectedPeople.add(passenger);
-                                System.out.println("пассажир " + passenger + " хочет зайти в лифт " + elevator.getId() + " на " + currentFloor + " этаже и поехать вверх");
+                                System.out.println("РїР°СЃСЃР°Р¶РёСЂ " + passenger + " С…РѕС‡РµС‚ Р·Р°Р№С‚Рё РІ Р»РёС„С‚ " + elevator.getId() + " РЅР° " + currentFloor + " СЌС‚Р°Р¶Рµ Рё РїРѕРµС…Р°С‚СЊ РІРІРµСЂС…");
 
                             } else if (passengerStartFloor == currentFloor && passengerDirection == Destination.Down) {
                                 downDirectedPeople.add(passenger);
-                                System.out.println("пассажир " + passenger + " хочет зайти в лифт " + elevator.getId() + " на " + currentFloor + " этаже и поехать вниз");
+                                System.out.println("РїР°СЃСЃР°Р¶РёСЂ " + passenger + " С…РѕС‡РµС‚ Р·Р°Р№С‚Рё РІ Р»РёС„С‚ " + elevator.getId() + " РЅР° " + currentFloor + " СЌС‚Р°Р¶Рµ Рё РїРѕРµС…Р°С‚СЊ РІРЅРёР·");
                             }
                         }
 
