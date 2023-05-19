@@ -8,13 +8,13 @@ public class MyPassenger {
         setFinishFloor(finishFloor);
 
         if (startFloor < 1 || finishFloor < 1) {
-            throw new IllegalArgumentException("Этаж не может быть меньше 1");
+            throw new IllegalArgumentException("Р­С‚Р°Р¶ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ 1");
         } else if (startFloor > 15 || finishFloor > 15) {
-            throw new IllegalArgumentException("Этаж не может быть больше 15");
+            throw new IllegalArgumentException("Р­С‚Р°Р¶ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 15");
         }
 
         if (startFloor == finishFloor) {
-            throw new IllegalArgumentException("Стартовый и конечный этажи не могут быть одинаковыми");
+            throw new IllegalArgumentException("РЎС‚Р°СЂС‚РѕРІС‹Р№ Рё РєРѕРЅРµС‡РЅС‹Р№ СЌС‚Р°Р¶Рё РЅРµ РјРѕРіСѓС‚ Р±С‹С‚СЊ РѕРґРёРЅР°РєРѕРІС‹РјРё");
         }
 
         this.direction = Integer.compare(finishFloor, startFloor);
